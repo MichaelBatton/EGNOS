@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Grey_snow"
+        android:text="NMEA Messages"
+        android:textColor="@color/Black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rtcm_rtcm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Grey_snow"
+        android:text="RTCM Messages"
+        android:textColor="@color/Black" />
+
+    <ScrollView
+        android:id="@+id/rtcmscrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/rtcm_output_rtcm_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" >
+        </TextView>
+    </ScrollView>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom" >
+
+            <Button
+                android:id="@+id/rtcm_button_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Disconnect" />
+
+            <Button
+                android:id="@+id/rtcm_button_sendAlsoVia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Send also Via" />
+
+            <Button
+                android:id="@+id/rtcm_button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Back" />
+        </TableRow>
+    </TableLayout>
+    <ScrollView
+        android:id="@+id/nmeartcmscrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rtcmscrollView"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/rtcmscrollView" >
+        <TextView
+            android:id="@+id/rtcm_output_nmea_window"
+            android:layout_width="fill_parent"
+            android:layout_height="164dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/rtcmscrollView" />
+    </ScrollView>
+</RelativeLayout>

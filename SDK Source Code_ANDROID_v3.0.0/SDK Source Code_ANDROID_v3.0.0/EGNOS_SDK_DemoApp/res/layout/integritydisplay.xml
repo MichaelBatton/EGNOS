@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/integrityDisplay_scroll" 
+            android:layout_height="wrap_content" 
+            android:layout_width="match_parent" 
+            android:background="@color/White">
+            
+<RelativeLayout android:id="@+id/integrityDisplay_relative" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"           
+                >
+
+ <RelativeLayout android:id="@+id/firstCircle_relative"
+                 android:layout_height="80px" 
+                 android:layout_width="fill_parent">                
+		   <TextView android:layout_width="wrap_content" 
+		             android:id="@+id/firstCircle_text" 
+		             android:layout_alignParentLeft="true" 
+		             android:layout_height="wrap_content"
+		             android:text="Aviation" 
+		             android:textSize="40px"
+		             android:textColor="@color/DarkBlue">
+		   </TextView>
+		    <CheckBox android:id="@+id/firstCircle_check"
+		              android:layout_alignParentRight="true"  
+		              android:layout_width="wrap_content" 
+		              android:layout_height="55px" 
+		              android:checked="true">
+		    </CheckBox>
+</RelativeLayout>   
+ <RelativeLayout android:id="@+id/secondCircle_relative"
+                 android:layout_below="@+id/firstCircle_relative" 
+                 android:layout_height="80px" 
+                 android:layout_width="fill_parent">     
+		   <TextView android:layout_width="wrap_content"
+		             android:id="@+id/secondCircle_text" 
+		             android:layout_height="wrap_content" 
+		             android:text="Maritime" 
+		             android:textSize="40px" 
+		             android:textColor="@color/Magenta"> 
+		             
+		   </TextView>
+		   <CheckBox android:id="@+id/secondCircle_check"             
+		             android:layout_width="wrap_content"
+		             android:keepScreenOn="false" 
+		             android:layout_alignParentRight="true" 
+		             android:layout_height="55px" 
+		             android:checked="true">
+		   </CheckBox>
+</RelativeLayout>
+ <RelativeLayout android:id="@+id/thirdCircle_relative"
+                 android:layout_width="wrap_content"
+                 android:layout_below="@+id/secondCircle_relative" 
+                 android:layout_height="80px"> 
+		   <TextView android:id="@+id/thirdCircle_text" 
+		             android:text="85%"             
+		             android:layout_width="wrap_content" 
+		             android:layout_height="wrap_content"
+		             android:textSize="40px" 
+		             android:textColor="@color/DarkPurple">
+		   </TextView>
+		   <CheckBox android:id="@+id/thirdCircle_check"            
+		             android:layout_alignParentRight="true" 
+		             android:layout_width="wrap_content" 
+		             android:layout_height="55px" 
+		             android:checked="true">
+		   </CheckBox>
+</RelativeLayout>
+
+</RelativeLayout>
+  </ScrollView>

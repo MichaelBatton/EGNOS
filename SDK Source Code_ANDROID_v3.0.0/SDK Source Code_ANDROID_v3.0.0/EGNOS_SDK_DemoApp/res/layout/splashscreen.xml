@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout android:id="@+id/relativeLayout1" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent" 
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:background="@color/White">
+                  
+   <ImageView android:layout_width="wrap_content" 
+              android:background="@drawable/ic_egnos_enabled_logo"
+              android:layout_height="wrap_content" 
+              android:id="@+id/egnosenabledlogo" 
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true">
+   </ImageView>
+   <TextView 
+             android:text="@string/egnosPortalLink"
+             android:layout_height="wrap_content" 
+             android:textColor="@color/Black"
+             android:id="@+id/egnos_portal_link" 
+             android:textSize="20px" 
+             android:layout_width="wrap_content" 
+             android:layout_below="@+id/egnosenabledlogo"
+              android:layout_centerHorizontal="true">
+   </TextView>
+    <TextView android:textColor="@color/Black" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:textSize="15px" 
+              android:text="Version 3.0.0" 
+              android:id="@+id/version_number" 
+              android:layout_below="@+id/egnos_portal_link"
+              android:layout_centerHorizontal="true" 
+              android:layout_marginTop="42dp"></TextView>
+ </RelativeLayout> 
+

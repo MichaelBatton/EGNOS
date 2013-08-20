@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="@string/egnos_io_preference_screen_key">
+
+    <PreferenceCategory android:title="@string/bluetoothSettings" >
+        <CheckBoxPreference
+            android:key="bluetoothOnOffKey"
+            android:summary="@string/bluetoothOnOffSummary"
+            android:title="@string/bluetoothOnOff" >
+        </CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"
+            android:key="nmea-or-rtcm-pref"
+            android:summary="List preference example"
+            android:title="@string/list_preference_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="nmea_setting_options"
+        android:title="@string/nmea_setting_title" >
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="nmea_bt"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/nmea_bt_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="nmea_wifi"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/nmea_wifi_title"  >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="nmea_file"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/nmea_file_title"  >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="RTCM Settings"  android:key="rtcm_setting_options">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rtcm_bt"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/rtcm_bt_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rtcm_wifi"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/rtcm_wifi_title" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rtcm_file"
+            android:summary="SUMMARY [TO DO]"
+            android:title="@string/rtcm_file_title" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+Disclaimer for the "EGNOS SDK"
+==============================
+
+"EGNOS SDK" is offered for developing applications for the EGNOS Open Service only. The terms and conditions of using this service, including the applicable limitations of liability, are defined in the EGNOS OS Service Definitions Document. Please consult it at http://ec.europa.eu/enterprise/policies/satnav/egnos/open-service/index_en.htm before using the "EGNOS SDK".
+ESA SISNeT service disclaimer (http://www.egnos-pro.esa.int/sisnet/disclaimer.html) will apply for the users of this service.
+
+"EGNOS SDK" is offered on an "as is" basis. The use of the "EGNOS SDK" is therefore at the user’s own risk. The European Commission expressly disclaims all warranties of any kind (whether express or implied), including, but not limited to the implied warranties of fitness for a particular purpose. No advice or information, whether oral or written, obtained by a user from the European Commission shall create any warranty. 
+
+By using the "EGNOS SDK", the user agrees that the European Union represented by the Commission shall not be held responsible or liable for any direct, indirect, incidental, special or consequential damages, including but not limited to, damages for interruption of business, loss of profits, goodwill or other intangible losses, resulting from the use and/or resulting from the misuse and/or impossibility to retrieve the EGNOS corrections or resulting from any other circumstance experienced by the user of the "EGNOS SDK".

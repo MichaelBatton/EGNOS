@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp" >
+
+        <TextView
+            android:id="@+id/startTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/startTextView"
+            android:src="@drawable/ic_gps_satellite" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="21dp"
+            android:src="@drawable/ic_egnos_sat" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_sbas_satellite" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_notused_satellite" />
+
+        <TextView
+            android:id="@+id/rndtextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="16dp"
+            android:text="*" />
+
+        <TextView
+            android:id="@+id/gpstextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="gps" />
+
+        <TextView
+            android:id="@+id/notUsedSattextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="notused" />
+
+        <TextView
+            android:id="@+id/rndtextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rndtextView1"
+            android:layout_alignBottom="@+id/rndtextView1"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="rnd" />
+
+        <TextView
+            android:id="@+id/sbasSattextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignLeft="@+id/notUsedSattextView"
+            android:text="sbas" />
+
+        <TextView
+            android:id="@+id/midtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rndtextView1"
+            android:layout_marginTop="16dp"
+            android:text="mid TextView" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_below="@+id/midtextView"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_arrow_image" />
+
+        <TextView
+            android:id="@+id/egnostextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sbasSattextView"
+            android:layout_alignLeft="@+id/sbasSattextView"
+            android:layout_alignTop="@+id/imageView2"
+            android:text="egnos" />
+
+        <TextView
+            android:id="@+id/redArrowtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:text="arrow TextView" />
+
+        <ImageView
+            android:id="@+id/arrowimageView"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="34dp"
+            android:src="@drawable/ic_horizon" />
+
+        <TextView
+            android:id="@+id/horizontextView"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_alignTop="@+id/arrowimageView"
+            android:layout_toRightOf="@+id/arrowimageView"
+            android:text="horizon TextView" />
+    </RelativeLayout>
+
+</ScrollView>

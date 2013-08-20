@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="list_preference_title">Mode NMEA or RTCM</string>
+  
+    <string name="nmea_setting_title">NMEA Setting</string>
+    <string name="nmea_bt_title">Send NMEA via Bluetooth</string>
+    <string name="nmea_wifi_title">Send NMEA via WiFi</string>
+    <string name="nmea_file_title">Save NMEA to File</string>
+  
+    
+    <string name="rtcm_setting_title">RTCM Setting</string>
+    <string name="rtcm_bt_title">Send RTCM via Bluetooth</string>
+    <string name="rtcm_wifi_title">Send RTCM via WiFi</string>
+    <string name="rtcm_file_title">Save RTCM to File</string>
+  
+      <string name="egnos_io_preference_screen_key">preference_screen_key</string>
+    
+</resources>

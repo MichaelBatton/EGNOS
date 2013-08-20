@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="White">#FFFFFF</color>
+<color name="Black">#000000</color>
+<color name ="Magenta">#C539C6</color>
+<color name ="DarkPurple">#000033</color>
+<color name ="Purple">#000033ff</color>
+<color name ="DarkBlue">#3366CC</color>
+<color name ="Blue">#3366CCff</color>
+<color name ="TransparentBlue">#186666ff</color>
+<color name="Grey_snow">#CDC9C9</color>
+<color name="Red">#F80000</color>
+<color name="Slate_Blue">#0080FF</color>
+<color name="Lime_Green">#00FF00</color>
+
+</resources>

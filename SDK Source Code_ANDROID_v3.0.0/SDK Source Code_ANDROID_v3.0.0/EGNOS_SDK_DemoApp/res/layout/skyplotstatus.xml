@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.ec.egnosdemoapp.SkyplotView
+        android:id="@+id/skyplotView"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2.12"/>
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="0px"
+       android:layout_weight="1" >
+
+       <SeekBar
+           android:id="@+id/timeSlider"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="17dp"
+           android:progressDrawable="@drawable/custom_timeslider" />
+
+       <TextView
+           android:id="@+id/zerotextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/timeSlider"
+           android:layout_centerHorizontal="true"
+           android:text="@string/zero"
+           android:textSize="10dp" />
+
+       <TextView
+           android:id="@+id/minus12textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/timeSlider"
+           android:text="@string/minusTwelve"
+           android:textSize="10dp" />
+
+       <TextView
+           android:id="@+id/plus12textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/timeSlider"
+           android:text="@string/plusTwelve"
+           android:textSize="10dp" />
+
+       <TextView
+           android:id="@+id/satellitesClicktextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/minus12textView"
+           android:text="@string/clickSatellitesMessage"
+           android:textSize="10dp" />
+
+       <ImageView
+           android:id="@+id/arView"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/satellitesClicktextView"
+           android:layout_marginTop="17dp"
+           android:src="@drawable/ic_ar_view" />
+
+       <TextView
+           android:id="@+id/notUsedtextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/arView"
+           android:layout_toRightOf="@+id/satellitesClicktextView"
+           android:clickable="true"
+           android:text="Not Used:"/>
+
+       <TextView
+           android:id="@+id/rndPostextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/satellitesClicktextView"
+           android:layout_toRightOf="@+id/notUsedtextView"
+           android:clickable="true"
+           android:text="*R&amp;D Pos:"
+           android:textColor="@color/Magenta" />
+
+       <TextView
+           android:id="@+id/egnosPostextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/rndPostextView"
+           android:layout_alignBottom="@+id/rndPostextView"
+           android:layout_alignRight="@+id/notUsedtextView"
+           android:layout_marginRight="31dp"
+           android:clickable="true"
+           android:text="EGNOS Pos:"
+           android:textColor="@color/Lime_Green" />
+
+       <TextView
+           android:id="@+id/gpsPostextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/egnosPostextView"
+           android:layout_alignBottom="@+id/egnosPostextView"
+           android:layout_toRightOf="@+id/minus12textView"
+           android:clickable="true"
+           android:text="GPS Pos:"
+           android:textColor="@color/Slate_Blue" />
+
+       <TextView
+           android:id="@+id/sbastextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/notUsedtextView"
+           android:layout_alignBottom="@+id/notUsedtextView"
+           android:layout_toLeftOf="@+id/egnosPostextView"
+           android:clickable="true"
+           android:text="SBAS Pos:"
+           android:textColor="@color/Red" />
+
+       <TextView
+           android:id="@+id/msgtextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/notUsedtextView"
+           android:layout_alignLeft="@+id/sbastextView"
+           android:layout_toLeftOf="@+id/arView"
+           android:text="Please connect to a receiver to get satellite information" >
+       </TextView>
+</RelativeLayout>
+</LinearLayout>

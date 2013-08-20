@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+   <string-array name="listOptions">
+     <item>NMEA</item>
+     <item>RTCM</item>
+     </string-array>
+
+   <string-array name="listValues">
+     <item>NMEA selected</item>
+     <item>RTCM selected</item>
+   </string-array>
+ </resources>

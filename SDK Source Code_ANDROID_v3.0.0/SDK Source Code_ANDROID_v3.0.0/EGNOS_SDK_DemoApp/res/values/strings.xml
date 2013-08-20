@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">EGNOS Demo App</string>
+    <string name="egnosPortalLink">http://www.egnos-portal.eu/</string>
+    
+    <string name="skyplot">Skyplot</string>
+    <string name="tracking">Tracking</string>
+    <string name="currentLocation">Current Location</string>
+    <string name="getDirections">Get Directions</string>
+    <string name="startTracking">Start Tracking</string>
+    <string name="stopTracking">Stop Tracking</string>
+    <string name="rnd">R\u0026D</string>
+    <string name="correctionsOutput">In-/Output</string>
+    <string name="clearMap">Clear Map</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="arviewinfo">Augmented Reality Info</string>
+    <string name="exit">Exit</string>
+    
+    <string name="startPoint">Start Point</string>
+    <string name="endPoint">End Point</string>
+    <string name="alertdialog_getDirections">Get Directions</string>
+    <string name="go">GO</string>
+    
+    <string name="bluetoothSettings">Bluetooth Settings</string>
+    <string name="bluetoothOnOff">Bluetooth</string>
+    <string name="bluetoothOnOffSummary">Turn on Bluetooth</string>
+    <string name="chooseBluetoothReceiver">Choose Bluetooth Receiver</string>
+    
+    <string name="egnosDataSource">EGNOS Data Source</string>
+    <string name="egnosSISOnOff">EGNOS Signal in Space</string>
+    <string name="egnosSISOnOffSummary">Turn on EGNOS Signal in Space</string>
+    <string name="sisnetOnOff">ESA\'s SISNeT</string>
+    <string name="sisnetOnOffSummary">Turn on ESA\'s SISNeT</string>
+    <string name="edasOnOff">EC\'s EDAS</string>
+    <string name="edasOnOffSummary">Turn on EC\'s EDAS</string>
+    
+    <string name="locationUpdateRequest">Location Update Request</string>
+    <string name="minTime">Minimum Time</string>
+    <string name="minTimeSummary">Minimum time for notifications, seconds</string>
+    <string name="minDistance">Minimum Distance</string>
+    <string name="minDistanceSummary">Minimum distance for notifications, meters</string>
+    
+    <string name="positionIntegrityDisplay">Position Integrity Display</string>
+    <string name="integrityDisplaySummary">Integrity Value for position, percentage</string>
+    <string name="integrityDisplay">Integrity Display</string>
+    <string name="firstCircle">20%</string>
+    <string name="secondCircle">65%</string>
+    <string name="thirdCircle">99%</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <string name="aboutDemoApp">About EGNOS Demo App</string>
+    
+    <string name="rndType1">Increased satellite constellation</string>
+    <string name="rndType2">Best satellite constellation</string>
+    <string name="rndType3">2D positioning</string>
+    <string name="rndType4">Positioning with RAIM</string>
+    <string name="rndType5">Fast correction with no RRC</string>
+    <string name="rndType6">Best weight matrix</string>
+    <string name="rndType7">INS enhanced position</string>
+    <string name="rndType8">SBAS Ranging function (MT9 and MT17)</string>
+    <string name="rndType8a">Automatic mode</string>
+    <string name="rndType8b">Forced mode</string>
+    <string name="rndType8c">Off mode</string>
+    <string name="rndAlertMessages">The position is not according to EGNOS D0-229D specifications. No integrity available</string>
+    <string name="rndPositionTypeTitle">R\u0026D Position Type</string>
+    
+    <string name="skyplotView">Skyplot View</string>
+    <string name="zero">0</string>
+    <string name="plusTwelve">+12</string>
+    <string name="minusTwelve">-12</string>
+    <string name="clickSatellitesMessage">Satellites (click to enable/disable)</string>
+    <string name="loadingSkyplot">Loading....Please wait</string>
+    <string name="EGNOSOutputWindowTitle">EGNOS corrections Input Output</string>
+    
+    <string name="chk_file_logging">File Logging</string>
+    <string name="chk_bluetooth">Bluetooth</string>
+    <string name="nmeadatawindowtitle">NMEA Data</string>
+    <string name="connectToBluetoothDevice">Connect to bluetooth device</string>
+    <string name="view">View</string>
+    <string name="sendAlsoVia">Send Also Via</string>
+    
+    <string name="bluetooth_send_button_string">Send</string>
+    <string name="save_to_file_button_string">Save</string>
+    <string name="ongoing_event_string">OnGoing event</string>
+    
+    
+    
+    
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect to DEVICE</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Connect to Server</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">This device will act as a client. Click on Gallery button to pick a local(stored) file</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Group Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+</resources>

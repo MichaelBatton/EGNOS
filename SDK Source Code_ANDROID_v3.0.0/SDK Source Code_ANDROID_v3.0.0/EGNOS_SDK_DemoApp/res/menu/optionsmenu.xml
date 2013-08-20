@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:id="@+id/mainGroup">
+   <item android:id="@+id/skyplot"
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_skyplot_menuitem" />
+   <item android:id="@+id/tracking" 
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_tracking_menuitem"
+         android:title="@string/tracking">
+    <menu>
+      <item android:id="@+id/currentLocation"
+            android:title="Current Location"/>
+<!--       <item android:id="@+id/getDirections"
+            android:title="Get Directions"/> -->
+      <item android:id="@+id/startTracking"
+            android:title="Start Tracking"/>
+    </menu>
+   </item>
+   <item android:id="@+id/rnd"
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_rnd_menuitem"/>  
+    <item android:id="@+id/egnoscorrections"
+         android:showAsAction="ifRoom|withText" 
+         android:icon="@drawable/ic_inoutput_menuitem"/> 
+   <item android:id="@+id/settings"
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_settings_menuitem"/>   
+   <item android:id="@+id/exit"
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_exit_menuitem" />  
+  </group>
+       
+  <group android:id="@+id/subGroup">
+   <item android:id="@+id/stopTracking"
+         android:showAsAction="ifRoom|withText"
+         android:icon="@drawable/ic_stoptracking_menuitem"/>
+  </group>
+</menu>

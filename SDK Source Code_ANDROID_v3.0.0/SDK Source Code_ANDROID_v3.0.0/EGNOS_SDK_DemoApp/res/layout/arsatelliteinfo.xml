@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ec.egnosdemoapp.ARSatellitePopup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transparent_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="180dp"
+        android:layout_height="104dp" >
+
+        <TextView
+            android:id="@+id/nametextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Name"
+            android:textColor="@color/Black" />
+
+        <!--
+             <TextView
+            android:id="@+id/distancetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/elevationtextView"
+            android:text="Distance"
+            android:textColor="@color/Black" />
+        -->
+
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/snrtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="SNR"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/elevationtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/snrtextView"
+            android:layout_alignParentLeft="true"
+            android:text="Elevation"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/azimuthtextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Azimuth"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/prntextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/close_button"
+            android:text="PRN"
+            android:textColor="@color/Black" />
+
+    </RelativeLayout>
+
+</com.ec.egnosdemoapp.ARSatellitePopup>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rndPositionTypeScrollView" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black" >
+
+        <TextView
+            android:id="@+id/alerttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/rndAlertMessages"
+            android:textSize="9dp" />
+
+        <CheckBox
+            android:id="@+id/type1checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/alerttextView" />
+
+        <TextView
+            android:id="@+id/type1textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type1checkBox"
+            android:layout_alignBottom="@+id/type1checkBox"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/alerttextView"
+            android:text="@string/rndType1" />
+
+        <CheckBox
+            android:id="@+id/type2checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type1checkBox" />
+
+        <TextView
+            android:id="@+id/type2textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type2checkBox"
+            android:layout_alignBottom="@+id/type2checkBox"
+            android:layout_alignLeft="@+id/type1textView"
+            android:text="@string/rndType2" />
+
+        <CheckBox
+            android:id="@+id/type3checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type2checkBox" />
+       
+        <CheckBox
+            android:id="@+id/type4checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type3checkBox" />
+
+        <TextView
+            android:id="@+id/type4textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type4checkBox"
+            android:layout_alignBottom="@+id/type4checkBox"
+            android:text="@string/rndType4" />
+        
+
+        <CheckBox
+            android:id="@+id/type5checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type4checkBox" />
+
+        <TextView
+            android:id="@+id/type5textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type5checkBox"
+            android:layout_alignBottom="@+id/type5checkBox"
+            android:text="@string/rndType5" />
+
+        <CheckBox
+            android:id="@+id/type6checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type5checkBox" />
+
+        <TextView
+            android:id="@+id/type6textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type6checkBox"
+            android:layout_alignBottom="@+id/type6checkBox"
+            android:layout_alignParentLeft="true"
+            android:text="@string/rndType6" />
+
+  <!--        <CheckBox
+            android:id="@+id/type7checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type6checkBox" />
+
+        <TextView
+            android:id="@+id/type7textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type7checkBox"
+            android:layout_alignBottom="@+id/type7checkBox"
+            android:layout_alignParentLeft="true"
+            android:text="@string/rndType7" /> -->
+        <TextView
+            android:id="@+id/type8textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/type6textView"
+            android:layout_marginTop="22dp"
+            android:text="@string/rndType8" />
+
+        <RadioGroup
+            android:id="@+id/type8radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/type8textView" >
+
+            <RadioButton
+                android:id="@+id/type8aradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/type8bradioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/type8cradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/type8atextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/type8radioGroup"
+            android:layout_marginTop="21dp"
+            android:text="@string/rndType8a" />
+
+        <TextView
+            android:id="@+id/type8btextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/type8atextView"
+            android:layout_below="@+id/type8atextView"
+            android:layout_marginTop="25dp"
+            android:text="@string/rndType8b" />
+
+        <TextView
+            android:id="@+id/type8ctextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/type8btextView"
+            android:layout_below="@+id/type8btextView"
+            android:layout_marginTop="21dp"
+            android:text="@string/rndType8c" />
+
+        <TextView
+            android:id="@+id/type3textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/type3checkBox"
+            android:layout_alignBottom="@+id/type3checkBox"
+            android:layout_alignParentLeft="true"
+            android:text="@string/rndType3" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,2 @@
+set solib-search-path E:/dev_EGNOSSDK_v2/Android/EGNOS_SDKv3/obj/local/armeabi
+directory E:/android-ndk-r6/platforms/android-9/arch-arm/usr/include CoordinatesMain.h Constants.h Egnos.h Ephemeris.h Fast_correction.h Ionosphere.h Long-correction.h Matrix.h Positioning.h Satellite.h Troposphere.h Utils.h E:/dev_EGNOSSDK_v2/Android/EGNOS_SDKv3/jni E:/android-ndk-r6/sources/cxx-stl/system

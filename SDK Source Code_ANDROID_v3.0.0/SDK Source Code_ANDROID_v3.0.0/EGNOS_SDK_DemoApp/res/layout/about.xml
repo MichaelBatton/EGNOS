@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/aboutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Text View" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/poweredByTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/aboutTextView"
+            android:layout_marginTop="22dp"
+            android:text="Powered By" />
+
+        <ImageView
+            android:id="@+id/logo1imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/poweredByTextView"
+            android:src="@drawable/ic_dke_logo" />
+
+        <ImageView
+            android:id="@+id/logo2imageView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/logo1imageView"
+            android:src="@drawable/ic_vva_logo" />
+
+        <TextView
+            android:id="@+id/logo1textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo1imageView"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/logo1imageView"
+            android:text="Text 1" />
+
+        <TextView
+            android:id="@+id/logo2textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo2imageView"
+            android:layout_toRightOf="@+id/logo2imageView"
+            android:text="Text 2" />
+
+    </RelativeLayout>
+
+</ScrollView>

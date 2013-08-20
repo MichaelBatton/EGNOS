@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ec"
+    android:versionCode="3"
+    android:versionName="3.0.0" >
+
+   <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="9" /> 
+<!--     <uses-sdk android:minSdkVersion="14" /> Wifidirect need api level 14 +
+    Permission for Wifidirect -->
+
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- ======================== -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.Access_Coarse_Location" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application 
+        android:name="com.ec.egnossdk.GlobalState"
+        android:debuggable="true"
+        android:icon="@drawable/ic_egnos_enabled_logo"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity android:name=".egnosdemoapp.SplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.EgnosDemoAppMain"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.SkyplotStatus"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/skyplotView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.EGNOSCorrectionInputOutput"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/EGNOSOutputWindowTitle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.NMEAData"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/nmeadatawindowtitle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.EGNOSConnectToDevices"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/connectToBluetoothDevice"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".egnosdemoapp.ARView" />
+        <activity
+            android:name=".egnosdemoapp.ARViewInformation"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/arviewinfo" />
+        <activity
+            android:name=".egnosdemoapp.Settings"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/settings" >
+        </activity>
+        <activity
+            android:name="com.ec.egnossdk.BluetoothReceiverList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/bluetoothReceiverList" >
+        </activity>
+        <activity
+            android:name="com.ec.egnossdk.BluetoothSenderList"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="List Devices to Send NMEA  Messages" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.About"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/about" >
+        </activity>
+        <activity android:name=".HoldMeUp" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.NMEARTCMActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/settings" >
+        </activity>
+        <activity
+            android:name=".egnosdemoapp.EGNOSIoSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="IO-Settings" >
+        </activity>
+                <activity
+            android:name=".wifidirect.WiFiDirectActivity"
+            android:label="WIFI-Send" android:launchMode="singleTask">
+            
+        </activity>
+
+    
+    </application>
+
+</manifest>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <Spinner
+            android:id="@+id/nmeaOrRTCMSPINNER"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_margin="10dp"
+            android:layout_weight="1" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/option_nmea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_nmea_bluetooth_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/chk_bluetooth" />
+                <Button
+                    android:id="@+id/sendNMEAViaBluetooth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/bluetooth_send_button_string" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_nmea_wifi_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="WiFi" />
+                <Button
+                    android:id="@+id/sendNMEAViaWifi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/bluetooth_send_button_string" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_nmea_file_logging"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/chk_file_logging" />
+                <Button
+                    android:id="@+id/saveNMEAToFile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/save_to_file_button_string" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow
+        android:id="@+id/option_rtcm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_rtcm_bluetooth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/chk_bluetooth" />
+                <Button
+                    android:id="@+id/receiveNmeaForRtcmViaBluetooth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="Receive NMEA BT" />
+                <Button
+                    android:id="@+id/sendRTCMViaBluetooth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/bluetooth_send_button_string" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_rtcm_wifi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="WiFi" />
+                <Button
+                    android:id="@+id/receiveNmeaForRtcmViaWiFi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="Receive NMEA WiFi"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/sendRTCMViaWifi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/bluetooth_send_button_string" />
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" >
+                <CheckBox
+                    android:id="@+id/chk_rtcm_file_logging"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/chk_file_logging" />
+                <Button
+                    android:id="@+id/readRTCMToFile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="Read"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/saveRTCMToFile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/save_to_file_button_string" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/Grey_snow"
+            android:text="@string/ongoing_event_string"
+            android:textColor="@color/Black" >
+        </TextView>
+    </TableRow>
+    <RelativeLayout
+        android:layout_height="192dp"
+        android:layout_weight="100" >
+        <ListView
+            android:id="@+id/onGoinglistView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+        </ListView>
+    </RelativeLayout>
+</TableLayout>

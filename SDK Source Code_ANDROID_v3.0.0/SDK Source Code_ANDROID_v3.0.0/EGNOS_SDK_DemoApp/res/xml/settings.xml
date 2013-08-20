@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<PreferenceCategory android:title="@string/bluetoothSettings">
+    <CheckBoxPreference android:title="@string/bluetoothOnOff"
+                        android:summary="@string/bluetoothOnOffSummary"
+                        android:key="bluetoothOnOffKey">
+    </CheckBoxPreference>
+                                    
+    <Preference android:title="@string/chooseBluetoothReceiver"
+                android:key="chooseBluetoothReceiverKey">
+    </Preference>
+</PreferenceCategory>         
+
+ <PreferenceCategory android:title="@string/egnosDataSource">
+    <CheckBoxPreference android:title="@string/egnosSISOnOff"
+                        android:defaultValue="false"
+                        android:summary="@string/egnosSISOnOffSummary"   
+                        android:key="egnosSISOnOffKey">
+    </CheckBoxPreference>
+    <CheckBoxPreference android:title="@string/sisnetOnOff"
+                        android:defaultValue="false"
+                        android:summary="@string/sisnetOnOffSummary"
+                        android:key="sisnetOnOffKey" >
+    </CheckBoxPreference>        
+    
+      <CheckBoxPreference android:title="@string/edasOnOff"
+                        android:defaultValue="false"
+                        android:summary="@string/edasOnOffSummary"
+                        android:key="edasOnOffKey" >
+     </CheckBoxPreference>  
+ </PreferenceCategory>
+ 
+  <PreferenceCategory android:title="@string/positionIntegrityDisplay">   
+    <Preference android:title="@string/integrityDisplay" 
+                android:summary="@string/integrityDisplaySummary"
+                android:key="integrityDisplayKey">
+    </Preference>
+ </PreferenceCategory>
+
+ <PreferenceCategory android:title="@string/locationUpdateRequest">
+    <EditTextPreference android:title="@string/minTime"
+                        android:defaultValue="3"
+                        android:summary="@string/minTimeSummary"
+                        android:digits="0123456789"
+                        android:key="minTimeKey">
+    </EditTextPreference>    
+    <EditTextPreference android:title="@string/minDistance"
+                        android:defaultValue="50"
+                        android:summary="@string/minDistanceSummary"
+                        android:digits="0123456789"
+                        android:key="minDistanceKey">
+     </EditTextPreference>
+ </PreferenceCategory>
+ 
+  <PreferenceCategory android:title="@string/aboutDemoApp">   
+    <Preference android:title="@string/about" 
+                android:key="aboutKey">
+    </Preference>
+ </PreferenceCategory>
+                    
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RadioGroup
+        android:id="@+id/sendAlsoradioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp" >
+        <RadioButton
+            android:id="@+id/sendRadio1"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:checked="true" 
+            android:enabled="false"/>
+        <RadioButton
+            android:id="@+id/sendRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:enabled="false"/>
+        <RadioButton
+            android:id="@+id/sendRadio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+    </RadioGroup>
+    <TextView android:id="@+id/send1_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginRight="19dp" android:layout_marginTop="18dp" android:layout_toLeftOf="@+id/sendAlsoradioGroup" android:enabled="false" android:text="Bluetooth"/>
+    <TextView android:id="@+id/send2_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/send1_textView" android:layout_below="@+id/send1_textView" android:layout_marginTop="26dp" android:enabled="false" android:text="Wifi"/>
+    <TextView android:id="@+id/send3_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/sendAlsoradioGroup" android:layout_alignLeft="@+id/send2_textView" android:layout_marginBottom="14dp" android:enabled="false" android:text="File Logging"/>
+</RelativeLayout>
