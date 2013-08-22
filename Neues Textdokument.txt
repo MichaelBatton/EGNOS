@@ -1,3 +1,4 @@
-Hallo, ich bin ein neues Textdokument.
+1.) Hallo, ich bin ein neues Textdokument.
 
-diese Änderung wurde im web geändert ohne eine branch zu erstellen.
+2.) diese Änderung wurde im web geändert ohne eine branch zu erstellen.
+3.) und noch einmal wie Nr. 2
